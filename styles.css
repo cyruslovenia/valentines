@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+  font-family: 'Comic Sans MS', 'Poppins', cursive;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4);
+  animation: popIn 0.6s ease;
+}
+
+h1 {
+  font-size: 2.6em;
+  color: #ff5c8a;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.yes-button {
+  font-size: 1.5em;
+  padding: 12px 28px;
+  margin-right: 12px;
+  background: linear-gradient(135deg, #7bed9f, #2ed573);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(46, 213, 115, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.yes-button:hover {
+  transform: scale(1.1);
+}
+
+.no-button {
+  font-size: 1.5em;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #ff6b81, #ff4757);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4);
+}
+
+.gif_container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 25px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.5);
+}
+
+/* Cute animation */
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
