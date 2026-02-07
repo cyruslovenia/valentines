@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+  font-family: 'Comic Sans MS', 'Poppins', cursive;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4);
+  animation: popIn 0.6s ease;
+}
+
+.header_text {
+  font-size: 3em;
+  color: #ff5c8a;
+  margin-bottom: 20px;
+}
+
+.gif_container img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.5);
+}
+
+/* cute entrance */
+@keyframes popIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
